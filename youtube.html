@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSs-1/all.css" />
+    <style>
+      #main_menu {
+        width: 1903px;
+        height: 4474px;
+        background: lightcyan;
+      }
+
+      #top {
+        width: 100%;
+        height: 130px;
+        position: fixed;
+        background: black;
+        top: 0;
+        left: 0;
+      }
+
+      .searchbar {
+        color: white;
+      }
+
+      .search {
+        width: 476px;
+        height: 50px;
+        top: 15px;
+        left: 37%;
+        background: black;
+        position: absolute;
+        border: 3px solid gray;
+        margin: auto;
+        z-index: -2;
+      }
+
+      .search::before {
+        content: "";
+        width: 50px;
+        height: 50px;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        margin: auto;
+        left: -3%;
+        z-index: -1;
+      }
+
+      .search::after {
+        content: "";
+        width: 50px;
+        height: 50px;
+        background-color: black;
+        border: 3px solid gray;
+        border-radius: 50%;
+        position: absolute;
+        margin: auto;
+        right: 94%;
+        top: -3px;
+        z-index: -3;
+      }
+
+      #input {
+        float: left;
+        line-height: 50px;
+        color: gray;
+        font-size: 25px;
+        z-index: 9;
+      }
+
+      #search_buttom {
+        width: 50px;
+        height: 56px;
+        top: 15px;
+        left: 62%;
+        background: gray;
+        position: absolute;
+        margin: auto;
+      }
+
+      #search_buttom::before {
+        content: "";
+        width: 56px;
+        height: 56px;
+        background: gray;
+        border-radius: 50%;
+        position: absolute;
+        margin: auto;
+        left: 40%;
+        z-index: -1;
+      }
+
+      #search_buttom h1 {
+        color: white;
+        text-align: right;
+        line-height: 60px;
+        margin: auto;
+      }
+
+      #videos td {
+        width: 404px;
+        height: 221px;
+        background: red;
+      }
+
+      #sidebar {
+        width: 15%;
+        height: calc(100vh- 75px);
+        position: fixed;
+        font-size: 10px;
+        left: 0;
+        top: 75px;
+        bottom: 0;
+        background: black;
+        color: white;
+      }
+
+      #sidebar:hover {
+        max-height: 827px;
+        overflow-y: overlay;
+        &::-webkit-scrollbar {
+          width: 7px;
+        }
+        &::-webkit-scrollbar-button {
+          background: transparent;
+          border-radius: 4px;
+        }
+        &::-webkit-scrollbar-track-piece {
+          background: transparent;
+        }
+        &::-webkit-scrollbar-thumb {
+          border-radius: 4px;
+          background-color: rgba(173, 173, 173, 0.4);
+          border: 1px solid slategrey;
+        }
+        &::-webkit-scrollbar-track {
+          box-shadow: transparent;
+        }
+      }
+
+      #content {
+        width: 85%;
+        margin-left: 15%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main_menu">
+      <div id="top">
+        <div class="searchbar">
+          <h1>
+            &emsp;<i class="fa-brands fa-elementor"></i>&emsp;<i
+              class="fa-brands fa-youtube"
+              style="color: red; background: white"
+            ></i
+            >YouTube<sup style="font-size: 10px">TW</sup>
+          </h1>
+          <div class="search">
+            <div id="input">搜尋</div>
+          </div>
+          <div id="search_buttom">
+            <h1><i class="fa-brands fa-searchengin"></i></h1>
+          </div>
+        </div>
+      </div>
+      <div id="sidebar">
+        <div class="class">
+          <div class="col">
+            <div class="card">
+              <h1>&emsp;<i class="fa-solid fa-house"></i>&emsp;首頁</h1>
+              <h1>&emsp;<i class="fa-solid fa-video"></i>&emsp;shorts</h1>
+              <h1>&emsp;<i class="fa-solid fa-heart"></i>&emsp;訂閱內容</h1>
+              <hr />
+              <h1>&emsp;<i class="fa-solid fa-user"></i>&emsp;個人中心</h1>
+              <h1>&emsp;<i class="fa-solid fa-clock"></i>&emsp;觀看紀錄</h1>
+              <hr />
+              <hr />
+              <h1>&emsp;探索</h1>
+              <h1>&emsp;<i class="fa-solid fa-clock"></i>&emsp;發燒影片</h1>
+              <h1>&emsp;<i class="fa-solid fa-clock"></i>&emsp;音樂</h1>
+              <h1>&emsp;<i class="fa-solid fa-clock"></i>&emsp;電影</h1>
+              <h1>&emsp;<i class="fa-solid fa-clock"></i>&emsp;直播</h1>
+              <h1>&emsp;<i class="fa-solid fa-clock"></i>&emsp;遊戲</h1>
+              <h1>&emsp;<i class="fa-solid fa-clock"></i>&emsp;新聞</h1>
+              <h1>&emsp;<i class="fa-solid fa-clock"></i>&emsp;體育</h1>
+              <h1>&emsp;<i class="fa-solid fa-clock"></i>&emsp;課程</h1>
+              <h1>&emsp;<i class="fa-solid fa-clock"></i>&emsp;Podcast</h1>
+              <hr />
+              <h1>&emsp;更多 YouTube 功能</h1>
+              <h1>
+                &emsp;<i class="fa-brands fa-youtube"></i>&emsp;YouTube Premium
+              </h1>
+              <h1>
+                &emsp;<i class="fa-brands fa-youtube"></i>&emsp;YouTube Music
+              </h1>
+              <h1>
+                &emsp;<i class="fa-brands fa-youtube"></i>&emsp;YouTube Kids
+              </h1>
+              <hr />
+              <h1>&emsp;<i class="fa-brands fa-steam-symbol"></i>&emsp;設定</h1>
+              <h1>
+                &emsp;<i class="fa-brands fa-font-awesome"></i>&emsp;檢舉紀錄
+              </h1>
+              <h1>&emsp;<i class="fa-brands fa-quora"></i>&emsp;說明</h1>
+              <h1>&emsp;<i class="fa-brands fa-telegram"></i>&emsp;提供意見</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="videos">
+        <table>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

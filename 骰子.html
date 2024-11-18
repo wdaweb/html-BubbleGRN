@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .dice {
+        width: 150px;
+        height: 150px;
+        top: 50%;
+        left: 50%;
+        transform: translate(0, -50%);
+        position: absolute;
+        float: left;
+        border: 2px solid #000;
+        background-image: linear-gradient(45deg, rgb(201, 201, 201), #fff);
+        border-radius: 10%;
+        box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
+      }
+
+      .one {
+        width: 20%;
+        height: 20%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background: red;
+      }
+
+      .two {
+        width: 20%;
+        height: 20%;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        border-radius: 50%;
+        background: #000;
+      }
+
+      .two1 {
+        width: 20%;
+        height: 20%;
+        position: absolute;
+        bottom: 10%;
+        right: 10%;
+        border-radius: 50%;
+        background: #000;
+      }
+
+      .four {
+        width: 20%;
+        height: 20%;
+        top: 10%;
+        left: 10%;
+        position: absolute;
+        border-radius: 50%;
+        background: red;
+      }
+
+      .four1 {
+        width: 20%;
+        height: 20%;
+        bottom: 10%;
+        left: 10%;
+        position: absolute;
+        border-radius: 50%;
+        background: red;
+      }
+
+      .four2 {
+        width: 20%;
+        height: 20%;
+        top: 10%;
+        right: 10%;
+        position: absolute;
+        border-radius: 50%;
+        background: red;
+      }
+
+      .four3 {
+        width: 20%;
+        height: 20%;
+        bottom: 10%;
+        right: 10%;
+        position: absolute;
+        border-radius: 50%;
+        background: red;
+      }
+
+      .six {
+        width: 20%;
+        height: 20%;
+        position: absolute;
+        border-radius: 50%;
+        top: 50%;
+        left: 10%;
+        transform: translate(0%, -50%);
+        background: #000;
+      }
+
+      .six1 {
+        width: 20%;
+        height: 20%;
+        position: absolute;
+        border-radius: 50%;
+        top: 50%;
+        right: 10%;
+        transform: translate(0%, -50%);
+        background: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dice" style="left: 25.4%">
+      <div class="one"></div>
+    </div>
+    <div class="dice" style="left: 33.6%">
+      <div class="two1"></div>
+      <div class="two"></div>
+    </div>
+    <div class="dice" style="left: 41.8%">
+      <div class="one" style="background: #000"></div>
+      <div class="two1"></div>
+      <div class="two"></div>
+    </div>
+    <div class="dice">
+      <div class="four"></div>
+      <div class="four1"></div>
+      <div class="four2"></div>
+      <div class="four3"></div>
+    </div>
+    <div class="dice" style="left: 58.2%">
+      <div class="one" style="background: #000"></div>
+      <div class="four" style="background: #000"></div>
+      <div class="four1" style="background: #000"></div>
+      <div class="four2" style="background: #000"></div>
+      <div class="four3" style="background: #000"></div>
+    </div>
+    <div class="dice" style="left: 66.4%">
+      <div class="four" style="background: #000"></div>
+      <div class="four1" style="background: #000"></div>
+      <div class="four2" style="background: #000"></div>
+      <div class="four3" style="background: #000"></div>
+      <div class="six"></div>
+      <div class="six1"></div>
+    </div>
+  </body>
+</html>

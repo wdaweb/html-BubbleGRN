@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .bear {
+        position: relative;
+        border-radius: 50%;
+        background: #000;
+        width: 25vw;
+        height: 50vh;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, 50%);
+        z-index: 5;
+      }
+
+      .bear::before {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        background: #fff;
+        width: 50%;
+        height: 32%;
+        left: 50%;
+        top: 25%;
+        transform: translate(-50%, 50%);
+        z-index: 6;
+      }
+
+      .bear::after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        background: #000;
+        width: 13%;
+        height: 8%;
+        left: 50%;
+        top: 39%;
+        transform: translate(-50%, 50%);
+        z-index: 7;
+      }
+
+      .bear_ear {
+        position: absolute;
+        border-radius: 50%;
+        background: #000;
+        width: 25%;
+        height: 25%;
+        left: 88%;
+        top: -15%;
+        transform: translate(-50%, 50%);
+        z-index: 3;
+      }
+
+      .bear_ear::before {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        background: #000;
+        width: 100%;
+        height: 100%;
+        right: 240%;
+        top: -54%;
+        transform: translate(-50%, 50%);
+        z-index: 1;
+      }
+
+      .bear_ear::after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        background: #fff;
+        width: 50%;
+        height: 50%;
+        right: 291%;
+        top: -7%;
+        transform: translate(-50%, 50%);
+        z-index: 2;
+      }
+
+      .bear_eyes {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        background: #fff;
+        width: 13%;
+        height: 13%;
+        right: -1%;
+        top: -3%;
+        transform: translate(-50%, 50%);
+        z-index: 4;
+      }
+
+      .bear_eyes::before {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        background: #fff;
+        width: 160%;
+        height: 160%;
+        right: 48%;
+        top: 52%;
+        transform: translate(-50%, 50%);
+        z-index: 4;
+      }
+
+      .bear_eyes::after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        background: #fff;
+        width: 160%;
+        height: 160%;
+        left: -362%;
+        top: 41%;
+        transform: translate(-50%, 50%);
+        z-index: 4;
+      }
+
+      .bearface {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        background: #000;
+        width: 10%;
+        height: 10%;
+        left: 67%;
+        top: 21%;
+        transform: translate(-50%, 50%);
+        z-index: 4;
+      }
+
+      .bearface::before {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        background: #000;
+        width: 100%;
+        height: 100%;
+        left: -276%;
+        top: -60%;
+        transform: translate(-50%, 50%);
+        z-index: 4;
+      }
+
+      .bearface::after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        background: red;
+        width: 200%;
+        height: 200%;
+        left: -560%;
+        top: 36%;
+        transform: translate(-50%, 50%);
+        z-index: 4;
+      }
+
+      .tie {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        background: red;
+        width: 20%;
+        height: 20%;
+        left: 93%;
+        top: 31%;
+        transform: translate(-50%, 50%);
+        z-index: 4;
+      }
+
+      .tie::before {
+        content: "";
+        position: absolute;
+        background: #fff;
+        width: 120%;
+        height: 75%;
+        left: -274%;
+        top: 180%;
+        transform: translate(-50%, 50%);
+        transform: skew(45deg);
+        z-index: 4;
+      }
+
+      .tie::after {
+        content: "";
+        position: absolute;
+        background: #fff;
+        width: 120%;
+        height: 75%;
+        left: -172%;
+        top: 180%;
+        transform: translate(-50%, 50%);
+        transform: skew(-45deg);
+        z-index: 4;
+      }
+
+      .mouth {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        background: black;
+        width: 30%;
+        height: 12%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, 50%);
+        z-index: 9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bear">
+      <div class="bear_ear"></div>
+      <div class="bear_eyes"></div>
+      <div class="bearface"></div>
+      <div class="tie"></div>
+      <div class="mouth"></div>
+    </div>
+  </body>
+</html>
