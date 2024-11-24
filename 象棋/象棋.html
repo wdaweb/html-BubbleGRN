@@ -4,10 +4,303 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      /* .chess {
+        width: 20px;
+        height: 20%;
+        border-radius: 100%;
+      } */
+
+      @font-face {
+        font-family: masafont-Regular;
+        src: url(https://cdn.jsdelivr.net/gh/max32002/masafont@2.1/webfont/MasaFont-Regular.woff2)
+            format("woff2"),
+          url(https://cdn.jsdelivr.net/gh/max32002/masafont@2.1/webfont/MasaFont-Regular.woff)
+            format("woff");
+      }
+
+      .d-flex {
+        display: flex;
+      }
+
+      .checkerboard {
+        width: 1920px;
+        height: 1080px;
+        display: flex;
+        flex-flow: row;
+        background: brown;
+        box-sizing: border-box;
+        padding-top: 31px;
+        padding-bottom: 31px;
+      }
+
+      .fullboard {
+        border: 3px solid #000;
+        width: 92%;
+        height: 100%;
+        justify-content: center;
+        box-sizing: border-box;
+        padding: 8px;
+        order: 2;
+      }
+
+      .text1 {
+        order: 1;
+        justify-content: center;
+        margin-right: 10px;
+        margin-left: 20px;
+        font-size: 46px;
+        writing-mode: vertical-rl;
+        font-family: masafont-Regular;
+      }
+
+      .text2 {
+        order: 3;
+        margin-right: 200px;
+        margin-left: 10px;
+        font-size: 46px;
+        justify-content: center;
+        writing-mode: vertical-rl;
+        font-family: masafont-Regular;
+      }
+
+      .black {
+        width: 100%;
+        height: 45%;
+      }
+
+      .red {
+        width: 100%;
+        height: 45%;
+      }
+
+      .row {
+        width: 1744px;
+      }
+
+      .col {
+        width: calc(1744px / 8);
+        height: 110px;
+        border: 1px solid #000;
+      }
+
+      .river {
+        width: 100% - 1px;
+        height: 100px;
+        border: 1px solid #000;
+        font-size: 75px;
+        font-family: masafont-Regular;
+      }
+
+      .justify-content {
+        justify-content: space-around;
+      }
+
+      .slogan {
+        font-size: 75px;
+      }
+
+      .justify-content2 {
+        justify-content: space-between;
+      }
+
+      .flex-direction {
+        flex-direction: row;
+      }
+
+      .align-items-center {
+        align-items: center;
+      }
+
+      .chess {
+        background: burlywood;
+        width: 80px;
+        height: 80px;
+        border-radius: 50px;
+        text-align: center;
+        line-height: 80px;
+        font-size: 50px;
+        border: 1px solid #000;
+        font-family: masafont-Regular;
+      }
+    </style>
   </head>
   <body>
-    <div class="row d-flex">
-      <div class="col"></div>
+    <div id="land">
+      <div id="black_army">
+        <div class="main_row">
+          <div class="chess">車</div>
+          <div class="chess">馬</div>
+          <div class="chess">象</div>
+          <div class="chess">士</div>
+          <div class="chess">將</div>
+          <div class="chess">士</div>
+          <div class="chess">象</div>
+          <div class="chess">馬</div>
+          <div class="chess">車</div>
+        </div>
+        <div class="empty_row"></div>
+        <div class="second_row">
+          <div class="empty_chess"></div>
+          <div class="chess">包</div>
+          <div class="empty_chess"></div>
+          <div class="empty_chess"></div>
+          <div class="empty_chess"></div>
+          <div class="empty_chess"></div>
+          <div class="empty_chess"></div>
+          <div class="chess">包</div>
+          <div class="empty_chess"></div>
+        </div>
+        <div class="third_row">
+          <div class="chess">卒</div>
+          <div class="empty_chess"></div>
+          <div class="chess">卒</div>
+          <div class="empty_chess"></div>
+          <div class="chess">卒</div>
+          <div class="empty_chess"></div>
+          <div class="chess">卒</div>
+          <div class="empty_chess"></div>
+          <div class="chess">卒</div>
+        </div>
+        <div class="empty_row"></div>
+      </div>
+      <div id="red_army">
+        <div class="empty_row"></div>
+        <div class="third_row">
+          <div class="chess">兵</div>
+          <div class="empty_chess"></div>
+          <div class="chess">兵</div>
+          <div class="empty_chess"></div>
+          <div class="chess">兵</div>
+          <div class="empty_chess"></div>
+          <div class="chess">兵</div>
+          <div class="empty_chess"></div>
+          <div class="chess">兵</div>
+        </div>
+        <div class="second_row">
+          <div class="empty_chess"></div>
+          <div class="chess">炮</div>
+          <div class="empty_chess"></div>
+          <div class="empty_chess"></div>
+          <div class="empty_chess"></div>
+          <div class="empty_chess"></div>
+          <div class="empty_chess"></div>
+          <div class="chess">炮</div>
+          <div class="empty_chess"></div>
+        </div>
+        <div class="empty_row"></div>
+        <div class="main_row">
+          <div class="chess">俥</div>
+          <div class="chess">傌</div>
+          <div class="chess">相</div>
+          <div class="chess">仕</div>
+          <div class="chess">帥</div>
+          <div class="chess">仕</div>
+          <div class="chess">相</div>
+          <div class="chess">傌</div>
+          <div class="chess">俥</div>
+        </div>
+      </div>
+      <div class="checkerboard d-flex">
+        <div class="fullboard">
+          <div class="black">
+            <div class="row d-flex">
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+            </div>
+            <div class="row d-flex">
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+            </div>
+            <div class="row d-flex">
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+            </div>
+            <div class="row d-flex">
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+            </div>
+          </div>
+
+          <div class="river d-flex justify-content align-items-center">
+            <div class="chuhe">楚河</div>
+            <div class="hanjie">漢界</div>
+          </div>
+
+          <div class="red">
+            <div class="row d-flex">
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+            </div>
+            <div class="row d-flex">
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+            </div>
+            <div class="row d-flex">
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+            </div>
+            <div class="row d-flex">
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+              <div class="col"></div>
+            </div>
+          </div>
+        </div>
+        <p class="text1 d-flex flex-direction">
+          棋盤裡，車無輪，馬無韁，叫聲將軍提防提防
+        </p>
+        <p class="text2 d-flex flex-direction">
+          圖畫裡，龍不吟，虎不嘯，小小書僮可笑可笑
+        </p>
+      </div>
     </div>
   </body>
 </html>
