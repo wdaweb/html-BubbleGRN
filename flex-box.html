@@ -4,15 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      #content {
+        width: 1024px;
+        height: 768px;
+      }
+
+      .top {
+        background: black;
+        color: white;
+      }
+
+      .d-flex {
+        display: flex;
+      }
+
+      .justify {
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+      }
+    </style>
   </head>
   <body>
     <div id="content">
-      <div id="top">
+      <div class="top d-flex justify">
         <div>Start Bootstrap</div>
-        <div>Home</div>
-        <div>About</div>
-        <div>Contact</div>
-        <div>Services</div>
+        <div class="select">
+          <div>Home</div>
+          <div>About</div>
+          <div>Contact</div>
+          <div>Services</div>
+        </div>
       </div>
       <div id="container"></div>
       <div id="footer">
