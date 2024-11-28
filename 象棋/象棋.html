@@ -5,12 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      /* .chess {
-        width: 20px;
-        height: 20%;
-        border-radius: 100%;
-      } */
-
       @font-face {
         font-family: masafont-Regular;
         src: url(https://cdn.jsdelivr.net/gh/max32002/masafont@2.1/webfont/MasaFont-Regular.woff2)
@@ -123,12 +117,107 @@
         border: 1px solid #000;
         font-family: masafont-Regular;
       }
+
+      .direction {
+        flex-direction: row;
+      }
+
+      .chessPlace {
+        width: 1920px;
+        justify-content: space-around;
+      }
+
+      .gap {
+        gap: 30px;
+      }
+
+      .gap1 {
+        gap: 90px;
+      }
+
+      .gap2 {
+        gap: 90px;
+      }
+
+      .mask {
+        width: 1920px;
+        height: 1080px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        mask-position: top;
+        mask-size: cover;
+        overflow: hidden;
+        position: relative;
+        /* background-color: rgba(0, 0, 0, 0.6); */
+      }
+
+      #black_army .main_row {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+
+      #black_army .empty_row1 {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+
+      #black_army .second_row {
+        position: absolute;
+        top: 230px;
+        left: 10px;
+      }
+
+      #black_army .third_row {
+        position: absolute;
+        top: 340px;
+        left: 10px;
+      }
+
+      #black_army .empty_row {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+
+      #red_army .empty_row {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+
+      #red_army .third_row {
+        position: absolute;
+        top: 670px;
+        left: 10px;
+      }
+
+      #red_army .second_row {
+        position: absolute;
+        top: 780px;
+        left: 10px;
+      }
+
+      #red_army .empty_row1 {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+
+      #red_army .main_row {
+        position: absolute;
+        top: 1000px;
+        left: 10px;
+      }
     </style>
   </head>
   <body>
-    <div id="land">
+    <div id="land mask">
       <div id="black_army">
-        <div class="main_row">
+        <div class="main_row d-flex direction chessPlace gap">
           <div class="chess">車</div>
           <div class="chess">馬</div>
           <div class="chess">象</div>
@@ -139,8 +228,8 @@
           <div class="chess">馬</div>
           <div class="chess">車</div>
         </div>
-        <div class="empty_row"></div>
-        <div class="second_row">
+        <div class="empty_row1"></div>
+        <div class="second_row d-flex direction chessPlace gap1">
           <div class="empty_chess"></div>
           <div class="chess">包</div>
           <div class="empty_chess"></div>
@@ -151,7 +240,7 @@
           <div class="chess">包</div>
           <div class="empty_chess"></div>
         </div>
-        <div class="third_row">
+        <div class="third_row d-flex direction chessPlace gap1">
           <div class="chess">卒</div>
           <div class="empty_chess"></div>
           <div class="chess">卒</div>
@@ -166,7 +255,7 @@
       </div>
       <div id="red_army">
         <div class="empty_row"></div>
-        <div class="third_row">
+        <div class="third_row d-flex direction chessPlace gap1">
           <div class="chess">兵</div>
           <div class="empty_chess"></div>
           <div class="chess">兵</div>
@@ -177,7 +266,7 @@
           <div class="empty_chess"></div>
           <div class="chess">兵</div>
         </div>
-        <div class="second_row">
+        <div class="second_row d-flex direction chessPlace gap1">
           <div class="empty_chess"></div>
           <div class="chess">炮</div>
           <div class="empty_chess"></div>
@@ -188,8 +277,8 @@
           <div class="chess">炮</div>
           <div class="empty_chess"></div>
         </div>
-        <div class="empty_row"></div>
-        <div class="main_row">
+        <div class="empty_row1"></div>
+        <div class="main_row d-flex direction chessPlace gap">
           <div class="chess">俥</div>
           <div class="chess">傌</div>
           <div class="chess">相</div>
