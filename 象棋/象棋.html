@@ -18,11 +18,11 @@
       }
 
       .checkerboard {
-        width: 1920px;
-        height: 1080px;
+        width: 100vw;
+        height: 100vh;
         display: flex;
         flex-flow: row;
-        background: brown;
+        background: #d9bf9a;
         box-sizing: border-box;
         padding-top: 31px;
         padding-bottom: 31px;
@@ -30,8 +30,8 @@
 
       .fullboard {
         border: 3px solid #000;
-        width: 92%;
-        height: 100%;
+        width: 86%;
+        height: 97%;
         justify-content: center;
         box-sizing: border-box;
         padding: 8px;
@@ -41,18 +41,18 @@
       .text1 {
         order: 1;
         justify-content: center;
-        margin-right: 10px;
-        margin-left: 20px;
-        font-size: 46px;
+        margin-right: 42px;
+        margin-left: 36px;
+        font-size: 42px;
         writing-mode: vertical-rl;
         font-family: masafont-Regular;
       }
 
       .text2 {
         order: 3;
-        margin-right: 200px;
-        margin-left: 10px;
-        font-size: 46px;
+        margin-right: 81px;
+        margin-left: 43px;
+        font-size: 42px;
         justify-content: center;
         writing-mode: vertical-rl;
         font-family: masafont-Regular;
@@ -60,7 +60,7 @@
 
       .black {
         width: 100%;
-        height: 45%;
+        height: 44%;
       }
 
       .red {
@@ -73,8 +73,8 @@
       }
 
       .col {
-        width: calc(1744px / 8);
-        height: 110px;
+        width: calc(1614px / 8);
+        height: 91px;
         border: 1px solid #000;
       }
 
@@ -123,25 +123,25 @@
       }
 
       .chessPlace {
-        width: 1920px;
-        justify-content: space-around;
+        width: 100vw;
+        justify-content: space-evenly;
       }
 
       .gap {
-        gap: 30px;
+        gap: 10px;
       }
 
       .gap1 {
-        gap: 90px;
+        gap: 73px;
       }
 
       .gap2 {
-        gap: 90px;
+        gap: 63px;
       }
 
       .mask {
-        width: 1920px;
-        height: 1080px;
+        width: 100vw;
+        height: 100vh;
         top: 0;
         bottom: 0;
         left: 0;
@@ -156,7 +156,7 @@
       #black_army .main_row {
         position: absolute;
         top: 10px;
-        left: 10px;
+        left: -3px;
       }
 
       #black_army .empty_row1 {
@@ -167,14 +167,14 @@
 
       #black_army .second_row {
         position: absolute;
-        top: 230px;
-        left: 10px;
+        top: 190px;
+        left: -3px;
       }
 
       #black_army .third_row {
         position: absolute;
-        top: 340px;
-        left: 10px;
+        top: 285px;
+        left: -5px;
       }
 
       #black_army .empty_row {
@@ -191,14 +191,14 @@
 
       #red_army .third_row {
         position: absolute;
-        top: 670px;
-        left: 10px;
+        top: 573px;
+        left: -4px;
       }
 
       #red_army .second_row {
         position: absolute;
-        top: 780px;
-        left: 10px;
+        top: 668px;
+        left: -3px;
       }
 
       #red_army .empty_row1 {
@@ -209,8 +209,8 @@
 
       #red_army .main_row {
         position: absolute;
-        top: 1000px;
-        left: 10px;
+        top: 850px;
+        left: -1px;
       }
     </style>
   </head>
@@ -240,7 +240,7 @@
           <div class="chess">包</div>
           <div class="empty_chess"></div>
         </div>
-        <div class="third_row d-flex direction chessPlace gap1">
+        <div class="third_row d-flex direction chessPlace gap2">
           <div class="chess">卒</div>
           <div class="empty_chess"></div>
           <div class="chess">卒</div>
@@ -255,7 +255,7 @@
       </div>
       <div id="red_army">
         <div class="empty_row"></div>
-        <div class="third_row d-flex direction chessPlace gap1">
+        <div class="third_row d-flex direction chessPlace gap2">
           <div class="chess">兵</div>
           <div class="empty_chess"></div>
           <div class="chess">兵</div>
