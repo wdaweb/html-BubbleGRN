@@ -6,8 +6,8 @@
     <title>Document</title>
     <style>
       #content {
-        width: 1024px;
-        height: 768px;
+        width: 100vw;
+        height: 100vh;
         margin: auto;
       }
 
@@ -20,13 +20,13 @@
       }
 
       .container {
-        width: 100%;
-        height: 685px;
+        width: 75%;
+        margin: auto;
       }
 
       .footer {
         width: 100%;
-        height: 40px;
+        height: 100px;
         background: black;
         color: white;
       }
@@ -58,6 +58,15 @@
       .choice:hover {
         color: white;
       }
+
+      .justify2 {
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      h1 {
+        margin: 0;
+      }
     </style>
   </head>
   <body>
@@ -72,20 +81,35 @@
         </div>
       </div>
       <div class="container">
-        <div class="PicAndText d-flex d-direction">
-          <img src="https://picsum.photos/300/200/?random=10" />
-          <div class="Text">
+        <div
+          class="PicAndText d-flex d-direction justify2"
+          style="padding: 20px; padding-left: 20px"
+        >
+          <div><img src="https://picsum.photos/300/200/?random=10" /></div>
+          <div class="Text" style="padding-left: 25px; padding-right: 100px">
             <div class="Texttitle">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam,
-              soluta!
+              <h1>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Perferendis, odio!
+              </h1>
             </div>
-            <div class="Textbody">
+            <div class="Textbody" style="color: gray">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Aspernatur praesentium quae est minima dolor modi obcaecati. Odit
               odio consequatur animi ab corporis nostrum voluptates,
               perspiciatis laboriosam voluptatum vero velit fugiat!
             </div>
-            <input type="button" value="Call to Action" />
+            <br />
+            <input
+              type="button"
+              value="Call to Action"
+              style="
+                background: #0d6efd;
+                color: white;
+                border-radius: 5px;
+                height: 30px;
+              "
+            />
           </div>
         </div>
       </div>
