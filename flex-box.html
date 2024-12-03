@@ -5,22 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      #content {
-        width: 100vw;
-        height: 100vh;
-        margin: auto;
-      }
-
       .top {
-        width: 100%;
-        height: 23px;
+        width: 100vw;
         background: black;
         color: white;
         font-size: 20px;
       }
 
       .container {
-        width: 75%;
+        width: 75vw;
+        margin: auto;
+      }
+
+      .box {
+        width: 75vw;
         margin: auto;
       }
 
@@ -64,58 +62,128 @@
         align-items: center;
       }
 
+      .justify3 {
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        color: white;
+      }
+
+      .justify4 {
+        align-items: center;
+        justify-content: space-between;
+        color: black;
+      }
+
+      .bg-gray {
+        background: gray;
+      }
+
       h1 {
         margin: 0;
+      }
+
+      .card {
+        width: 450;
+        border: 1px solid black;
+      }
+
+      .cards {
+        width: 75vw;
+        margin: auto;
+      }
+
+      .justify5 {
+        justify-content: space-around;
+        align-items: start;
+        flex-direction: column;
       }
     </style>
   </head>
   <body>
-    <div id="content">
-      <div class="top d-flex justify">
-        <div>Start Bootstrap</div>
-        <div class="select d-flex d-direction">
-          <div class="choice" style="padding-right: 20px">Home</div>
-          <div class="choice" style="padding-right: 20px">About</div>
-          <div class="choice" style="padding-right: 20px">Contact</div>
-          <div class="choice">Services</div>
-        </div>
+    <div class="top d-flex justify">
+      <div>Start Bootstrap</div>
+      <div class="select d-flex d-direction">
+        <div class="choice" style="padding-right: 20px">Home</div>
+        <div class="choice" style="padding-right: 20px">About</div>
+        <div class="choice" style="padding-right: 20px">Contact</div>
+        <div class="choice">Services</div>
       </div>
-      <div class="container">
+    </div>
+    <div class="container">
+      <div
+        class="PicAndText d-flex d-direction justify2"
+        style="padding: 20px; padding-left: 20px"
+      >
+        <div><img src="https://picsum.photos/900/400/?random=10" /></div>
         <div
-          class="PicAndText d-flex d-direction justify2"
-          style="padding: 20px; padding-left: 20px"
+          class="Text"
+          style="padding-left: 25px; padding-right: 100px; width: 25vw"
         >
-          <div><img src="https://picsum.photos/300/200/?random=10" /></div>
-          <div class="Text" style="padding-left: 25px; padding-right: 100px">
-            <div class="Texttitle">
-              <h1>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Perferendis, odio!
-              </h1>
-            </div>
-            <div class="Textbody" style="color: gray">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Aspernatur praesentium quae est minima dolor modi obcaecati. Odit
-              odio consequatur animi ab corporis nostrum voluptates,
-              perspiciatis laboriosam voluptatum vero velit fugiat!
-            </div>
-            <br />
-            <input
-              type="button"
-              value="Call to Action"
-              style="
-                background: #0d6efd;
-                color: white;
-                border-radius: 5px;
-                height: 30px;
-              "
-            />
+          <div class="Texttitle">
+            <h1>Lorem ipsum dolor sit</h1>
           </div>
+          <div class="Textbody choice">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
+            praesentium quae est minima dolor modi obcaecati. Odit odio
+            consequatur animi ab corporis nostrum voluptates, perspiciatis
+            laboriosam voluptatum vero velit fugiat!
+          </div>
+          <br />
+          <input
+            type="button"
+            value="Call to Action"
+            style="
+              background: #0d6efd;
+              color: white;
+              border-radius: 5px;
+              height: 30px;
+            "
+          />
         </div>
       </div>
-      <div class="footer d-flex justify">
-        <div>Copyright Your Website 2023</div>
+    </div>
+    <div class="box d-flex d-direction justify3 bg-gray">
+      <div>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque,
+        delectus!
       </div>
+    </div>
+    <div class="cards d-flex justify4">
+      <div class="card d-flex justify5">
+        <div class="card-title"><h1>Card One</h1></div>
+        <div class="card-body">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio,
+          labore!
+        </div>
+        <div class="card-footer">
+          <div><input type="button" value="More Info" /></div>
+        </div>
+      </div>
+      <div class="card d-flex justify5">
+        <div class="card-title"><h1>Card Two</h1></div>
+        <div class="card-body">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio,
+          labore!
+        </div>
+        <div class="card-footer">
+          <div><input type="button" value="More Info" /></div>
+        </div>
+      </div>
+      <div class="card d-flex justify5">
+        <div class="card-title"><h1>Card Three</h1></div>
+        <div class="card-body">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio,
+          labore!
+        </div>
+        <div class="card-footer">
+          <div><input type="button" value="More Info" /></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer d-flex justify">
+      <div>Copyright Your Website 2023</div>
     </div>
   </body>
 </html>
