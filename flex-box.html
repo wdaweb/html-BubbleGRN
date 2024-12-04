@@ -17,9 +17,17 @@
         margin: auto;
       }
 
+      .img {
+        border-top-left-radius: 0.375px;
+        border-top-right-radius: 0.375px;
+        border-bottom-left-radius: 0.375px;
+        border-bottom-right-radius: 0.375px;
+      }
+
       .box {
         width: 75vw;
         margin: auto;
+        padding-bottom: 20px;
       }
 
       .footer {
@@ -57,17 +65,23 @@
         color: white;
       }
 
-      .justify2 {
-        justify-content: space-around;
-        align-items: center;
+      .colorGray {
+        color: gray;
       }
 
-      .justify3 {
+      .PATjustify {
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 5px;
+      }
+
+      .Boxjustify {
         justify-content: center;
         align-items: center;
         padding-top: 30px;
         padding-bottom: 30px;
         color: white;
+        border-radius: 5px;
       }
 
       .justify4 {
@@ -86,7 +100,7 @@
 
       .card {
         width: 450;
-        border: 1px solid black;
+        border: 1px solid gray;
       }
 
       .cards {
@@ -113,10 +127,13 @@
     </div>
     <div class="container">
       <div
-        class="PicAndText d-flex d-direction justify2"
+        class="PicAndText d-flex d-direction PATjustify"
         style="padding: 20px; padding-left: 20px"
       >
-        <div><img src="https://picsum.photos/900/400/?random=10" /></div>
+        <div>
+          <div class="mask"></div>
+          <img src="https://picsum.photos/900/400/?random=10" />
+        </div>
         <div
           class="Text"
           style="padding-left: 25px; padding-right: 100px; width: 25vw"
@@ -124,7 +141,7 @@
           <div class="Texttitle">
             <h1>Lorem ipsum dolor sit</h1>
           </div>
-          <div class="Textbody choice">
+          <div class="Textbody colorGray">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
             praesentium quae est minima dolor modi obcaecati. Odit odio
             consequatur animi ab corporis nostrum voluptates, perspiciatis
@@ -144,7 +161,10 @@
         </div>
       </div>
     </div>
-    <div class="box d-flex d-direction justify3 bg-gray">
+    <div
+      class="box d-flex d-direction Boxjustify bg-gray"
+      style="margin-bottom: 20px"
+    >
       <div>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque,
         delectus!
