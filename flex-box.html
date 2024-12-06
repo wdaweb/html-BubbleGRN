@@ -99,8 +99,7 @@
       }
 
       .card {
-        width: 450;
-        border: 1px solid gray;
+        width: 450px;
       }
 
       .cards {
@@ -108,10 +107,26 @@
         margin: auto;
       }
 
+      .card-main {
+        border: 1px solid gray;
+      }
+
       .Cardjustify2 {
         justify-content: space-around;
         align-items: start;
         flex-direction: column;
+        box-sizing: border-box;
+        padding: 15px;
+      }
+
+      .card-footer {
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid black;
+        background-color: lightgray;
+        padding-left: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
       }
     </style>
   </head>
@@ -171,34 +186,70 @@
       </div>
     </div>
     <div class="cards d-flex Cardjustify" style="padding-bottom: 20px">
-      <div class="card d-flex Cardjustify2">
-        <div class="card-title"><h1>Card One</h1></div>
-        <div class="card-body">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio,
-          labore!
+      <div class="card">
+        <div class="card-main d-flex Cardjustify2">
+          <div class="card-title" style="padding-bottom: 5px">
+            <h1>Card One</h1>
+          </div>
+          <div class="card-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum odio
+            ut nam dolor nesciunt sint vel architecto inventore? Ex odit
+            repellat placeat animi laudantium nisi laborum perspiciatis,
+            eligendi sit amet!
+          </div>
         </div>
         <div class="card-footer d-flex">
-          <div><input type="button" value="More Info" /></div>
+          <div>
+            <input
+              type="button"
+              value="More Info"
+              style="background: #0d6efd; color: white"
+            />
+          </div>
         </div>
       </div>
-      <div class="card d-flex Cardjustify2">
-        <div class="card-title"><h1>Card Two</h1></div>
-        <div class="card-body">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio,
-          labore!
+      <div class="card">
+        <div class="card-main d-flex Cardjustify2">
+          <div class="card-title" style="padding-bottom: 5px">
+            <h1>Card Two</h1>
+          </div>
+          <div class="card-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum odio
+            ut nam dolor nesciunt sint vel architecto inventore? Ex odit
+            repellat placeat animi laudantium nisi laborum perspiciatis,
+            eligendi sit amet!
+          </div>
         </div>
-        <div class="card-footer">
-          <div><input type="button" value="More Info" /></div>
+        <div class="card-footer d-flex">
+          <div>
+            <input
+              type="button"
+              value="More Info"
+              style="background: #0d6efd; color: white"
+            />
+          </div>
         </div>
       </div>
-      <div class="card d-flex Cardjustify2">
-        <div class="card-title"><h1>Card Three</h1></div>
-        <div class="card-body">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio,
-          labore!
+      <div class="card">
+        <div class="card-main d-flex Cardjustify2">
+          <div class="card-title" style="padding-bottom: 5px">
+            <h1>Card Three</h1>
+          </div>
+          <div class="card-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum odio
+            ut nam dolor nesciunt sint vel architecto inventore? Ex odit
+            repellat placeat animi laudantium nisi laborum perspiciatis,
+            eligendi sit amet!
+          </div>
         </div>
-        <div class="card-footer">
-          <div><input type="button" value="More Info" /></div>
+        <div class="card-footer d-flex">
+          <div>
+            <input
+              type="button"
+              value="More Info"
+              style="background: #0d6efd; color: white"
+            />
+          </div>
         </div>
       </div>
     </div>
